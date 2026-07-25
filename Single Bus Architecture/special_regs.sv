@@ -16,7 +16,7 @@ module special_regs #(
     input logic y_wr_en, // Load Y from bus 
     input logic z_wr_en, // Load Z from ALU result
     input logic mdr_bus_wr_en, // Load MDR from internal bus
-    input logic mdr_mem_wr_en // Load MDR from external memory
+    input logic mdr_mem_wr_en, // Load MDR from external memory
 
     // Register Outputs
 

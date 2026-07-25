@@ -30,7 +30,7 @@ module bus_mux #(
             SEL_MDR: bus_out <= mdr_out;
             SEL_REG: bus_out <= reg_rd_data;
             SEL_IMM: bus_out <= imm_val;
-            default: busout <= '0; // Bus drives 0 when IDLE
+            default: bus_out <= '0; // Bus drives 0 when IDLE
         endcase
     end
 endmodule

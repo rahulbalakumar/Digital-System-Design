@@ -9,7 +9,7 @@ module cpu #(
     output logic mem_read, // To read from external memory
     output logic mem_write, // To write to external memory
     input logic [WIDTH-1:0] mem_data_in, // Data coming into CPU from memory
-    output logic [WIDTH-1:0] mem_data_out, // Data coming into memory from CPU 
+    output logic [WIDTH-1:0] mem_data_out // Data coming into memory from CPU 
 );
 
     // Shared bus

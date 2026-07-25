@@ -19,8 +19,8 @@ module control_unit #(
 
     // Control signals for the register file
     output logic reg_wr_en,
-    output logic [2:0] reg_rd_adder,
-    output logic [2:0] reg_wr_adder,
+    output logic [2:0] reg_rd_addr,
+    output logic [2:0] reg_wr_addr,
 
     // ALU Control signals
     output logic [2:0] alu_op,
@@ -67,7 +67,7 @@ module control_unit #(
     // Next state and output logic
     always_comb begin
         // Setting defaults
-        bus_sel = NONE;
+        bus_sel = SEL_NONE;
         imm_val = '0;
         pc_wr_en = 0;
         ir_wr_en = 0;
@@ -123,7 +123,7 @@ module control_unit #(
             FETCH_5: begin
                 bus_sel = SEL_MDR;
                 ir_wr_en = 1;
-                next_state = DECODE // New instruction has been loaded into IR hence next is to decode it
+                next_state = DECODE; // New instruction has been loaded into IR hence next is to decode it
             end
 
             // DECODE CYCLE
@@ -158,7 +158,7 @@ module control_unit #(
             ADD_3: begin
                 bus_sel = SEL_Z;
                 reg_wr_addr = rd;
-                reg_wr_en;
+                reg_wr_en = 1;
                 next_state = FETCH_1; // Get the next instruction
             end
 

@@ -7,7 +7,7 @@ module reg_file #(
     input logic rst_n, // Active low reset
 
     // Writing Interface
-    input logic wr_en // Enable signal for writing
+    input logic wr_en, // Enable signal for writing
     input logic [2:0] wr_addr, // 3 bit address to select registers to write to (R0 - R7)
     input logic [WIDTH-1:0] wr_data, // 16-bit data to write
 
