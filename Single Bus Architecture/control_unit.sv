@@ -127,3 +127,67 @@ module control_unit #(
             end
 
             // DECODE CYCLE
+            DECODE: begin
+                case(opcode)
+                    4'b0001: next_state = ADD_1;
+                    4'b0010: next_state = LOAD_1;
+                    default: next_state = FETCH_1; // Revert to fetch since opcode is unknown
+                endcase
+            end
+
+            // EXECUTE CYCLE : ADD
+
+            // Get rs1 and put it in reg Y
+            ADD_1: begin
+                reg_rd_addr = rs1;
+                bus_sel = SEL_REG;
+                y_wr_en = 1; 
+                next_state = ADD_2;
+            end
+
+            // Get rs2, and ALU adds rs2 and rs1 and put it in reg Z
+            ADD_2: begin
+                reg_rd_addr = rs2;
+                bus_sel = SEL_REG;
+                alu_op = 3'b000; // ADD
+                z_wr_en = 1;
+                next_state = ADD_3;
+            end
+
+            // Write Z into Register File
+            ADD_3: begin
+                bus_sel = SEL_Z;
+                reg_wr_addr = rd;
+                reg_wr_en;
+                next_state = FETCH_1; // Get the next instruction
+            end
+
+            // EXECUTE CYCLE : LOAD
+
+            // Read Rs1's address and send to MAR
+            LOAD_1: begin
+                reg_rd_addr = rs1;
+                bus_sel = SEL_REG;
+                mar_wr_en = 1;
+                next_state = LOAD_2;
+            end
+
+            // Read from external memory into MDR
+            LOAD_2: begin
+                mem_read = 1;
+                mdr_mem_wr_en = 1;
+                next_state = LOAD_3;
+            end
+
+            // Write MDR into the destination register (Register File)
+            LOAD_3: begin
+                bus_sel = SEL_REG;
+                reg_wr_addr = rd;
+                reg_wr_en = 1;
+                next_state = FETCH_1; // Get the next instruction
+            end
+
+            default: next_state = FETCH_1;
+        endcase
+    end
+endmodule
