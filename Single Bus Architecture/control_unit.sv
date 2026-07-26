@@ -181,7 +181,7 @@ module control_unit #(
 
             // Write MDR into the destination register (Register File)
             LOAD_3: begin
-                bus_sel = SEL_REG;
+                bus_sel = SEL_MDR;
                 reg_wr_addr = rd;
                 reg_wr_en = 1;
                 next_state = FETCH_1; // Get the next instruction

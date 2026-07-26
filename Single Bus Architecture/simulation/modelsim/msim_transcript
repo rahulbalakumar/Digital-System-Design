@@ -1,0 +1,131 @@
+# Reading pref.tcl
+# do cpu_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+C:/Users/Rahul/Documents/ENTC\ S5/Digital\ System\ Design/Single\ Bus\ Architecture {C:/Users/Rahul/Documents/ENTC S5/Digital System Design/Single Bus Architecture/special_regs.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:04:03 on Jul 26,2026
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Rahul/Documents/ENTC S5/Digital System Design/Single Bus Architecture" C:/Users/Rahul/Documents/ENTC S5/Digital System Design/Single Bus Architecture/special_regs.sv 
+# -- Compiling module special_regs
+# 
+# Top level modules:
+# 	special_regs
+# End time: 20:04:03 on Jul 26,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Rahul/Documents/ENTC\ S5/Digital\ System\ Design/Single\ Bus\ Architecture {C:/Users/Rahul/Documents/ENTC S5/Digital System Design/Single Bus Architecture/reg_file.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:04:03 on Jul 26,2026
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Rahul/Documents/ENTC S5/Digital System Design/Single Bus Architecture" C:/Users/Rahul/Documents/ENTC S5/Digital System Design/Single Bus Architecture/reg_file.sv 
+# -- Compiling module reg_file
+# 
+# Top level modules:
+# 	reg_file
+# End time: 20:04:03 on Jul 26,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Rahul/Documents/ENTC\ S5/Digital\ System\ Design/Single\ Bus\ Architecture {C:/Users/Rahul/Documents/ENTC S5/Digital System Design/Single Bus Architecture/cpu.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:04:03 on Jul 26,2026
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Rahul/Documents/ENTC S5/Digital System Design/Single Bus Architecture" C:/Users/Rahul/Documents/ENTC S5/Digital System Design/Single Bus Architecture/cpu.sv 
+# -- Compiling module cpu
+# 
+# Top level modules:
+# 	cpu
+# End time: 20:04:03 on Jul 26,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Rahul/Documents/ENTC\ S5/Digital\ System\ Design/Single\ Bus\ Architecture {C:/Users/Rahul/Documents/ENTC S5/Digital System Design/Single Bus Architecture/control_unit.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:04:03 on Jul 26,2026
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Rahul/Documents/ENTC S5/Digital System Design/Single Bus Architecture" C:/Users/Rahul/Documents/ENTC S5/Digital System Design/Single Bus Architecture/control_unit.sv 
+# -- Compiling module control_unit
+# 
+# Top level modules:
+# 	control_unit
+# End time: 20:04:03 on Jul 26,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Rahul/Documents/ENTC\ S5/Digital\ System\ Design/Single\ Bus\ Architecture {C:/Users/Rahul/Documents/ENTC S5/Digital System Design/Single Bus Architecture/bus_mux.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:04:03 on Jul 26,2026
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Rahul/Documents/ENTC S5/Digital System Design/Single Bus Architecture" C:/Users/Rahul/Documents/ENTC S5/Digital System Design/Single Bus Architecture/bus_mux.sv 
+# -- Compiling module bus_mux
+# 
+# Top level modules:
+# 	bus_mux
+# End time: 20:04:03 on Jul 26,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Rahul/Documents/ENTC\ S5/Digital\ System\ Design/Single\ Bus\ Architecture {C:/Users/Rahul/Documents/ENTC S5/Digital System Design/Single Bus Architecture/alu.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:04:03 on Jul 26,2026
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Rahul/Documents/ENTC S5/Digital System Design/Single Bus Architecture" C:/Users/Rahul/Documents/ENTC S5/Digital System Design/Single Bus Architecture/alu.sv 
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# End time: 20:04:03 on Jul 26,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+C:/Users/Rahul/Documents/ENTC\ S5/Digital\ System\ Design/Single\ Bus\ Architecture {C:/Users/Rahul/Documents/ENTC S5/Digital System Design/Single Bus Architecture/tb_cpu.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:04:04 on Jul 26,2026
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Rahul/Documents/ENTC S5/Digital System Design/Single Bus Architecture" C:/Users/Rahul/Documents/ENTC S5/Digital System Design/Single Bus Architecture/tb_cpu.sv 
+# -- Compiling module tb_cpu
+# 
+# Top level modules:
+# 	tb_cpu
+# End time: 20:04:04 on Jul 26,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  tb_cpu
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" tb_cpu 
+# Start time: 20:04:04 on Jul 26,2026
+# Loading sv_std.std
+# Loading work.tb_cpu
+# Loading work.cpu
+# Loading work.alu
+# Loading work.reg_file
+# Loading work.special_regs
+# Loading work.bus_mux
+# Loading work.control_unit
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# TEST COMPLETE.
+# RAM[10] =   100
+# RAM[11] =   150
+# ----------------------
+# R1 =   100
+# R2 =   150
+# R3 (R1 + R2) =   250
+# SUCCESS: CPU FETCHED, LOADED, AND ADDED.
+# ** Note: $stop    : C:/Users/Rahul/Documents/ENTC S5/Digital System Design/Single Bus Architecture/tb_cpu.sv(87)
+#    Time: 1021 ns  Iteration: 0  Instance: /tb_cpu
+# Break in Module tb_cpu at C:/Users/Rahul/Documents/ENTC S5/Digital System Design/Single Bus Architecture/tb_cpu.sv line 87
+add wave -position insertpoint  \
+sim:/tb_cpu/mem_addr
+add wave -position insertpoint  \
+sim:/tb_cpu/clk
+add wave -position insertpoint  \
+sim:/tb_cpu/ram
+add wave -position insertpoint  \
+sim:/tb_cpu/mem_data_out
+add wave -position insertpoint  \
+sim:/tb_cpu/mem_data_in
+add wave -position insertpoint  \
+sim:/tb_cpu/mem_read
+add wave -position insertpoint  \
+sim:/tb_cpu/mem_addr
+add wave -position insertpoint  \
+sim:/tb_cpu/rst_n
+# End time: 20:10:53 on Jul 26,2026, Elapsed time: 0:06:49
+# Errors: 0, Warnings: 0

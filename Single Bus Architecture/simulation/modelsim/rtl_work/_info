@@ -1,0 +1,193 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Rahul/Documents/ENTC S5/Digital System Design/Single Bus Architecture/simulation/modelsim
+valu
+Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z2 !s110 1785076443
+!i10b 1
+!s100 TWZIZiJcPM;VUF<;4_i4J2
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IVnoQFQMf5;IASMM[SFfZR1
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+w1784994041
+8C:/Users/Rahul/Documents/ENTC S5/Digital System Design/Single Bus Architecture/alu.sv
+FC:/Users/Rahul/Documents/ENTC S5/Digital System Design/Single Bus Architecture/alu.sv
+!i122 5
+L0 1 33
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z6 !s108 1785076443.000000
+!s107 C:/Users/Rahul/Documents/ENTC S5/Digital System Design/Single Bus Architecture/alu.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Rahul/Documents/ENTC S5/Digital System Design/Single Bus Architecture|C:/Users/Rahul/Documents/ENTC S5/Digital System Design/Single Bus Architecture/alu.sv|
+!i113 1
+Z7 o-sv -work work
+Z8 !s92 -sv -work work {+incdir+C:/Users/Rahul/Documents/ENTC S5/Digital System Design/Single Bus Architecture}
+Z9 tCvgOpt 0
+vbus_mux
+R1
+R2
+!i10b 1
+!s100 e;]RnUInPYc9Woi:EIWOR0
+R3
+Ij0_D9?I=:lZIj9jHNcV^D1
+R4
+S1
+R0
+w1784994057
+8C:/Users/Rahul/Documents/ENTC S5/Digital System Design/Single Bus Architecture/bus_mux.sv
+FC:/Users/Rahul/Documents/ENTC S5/Digital System Design/Single Bus Architecture/bus_mux.sv
+!i122 4
+L0 1 36
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/Rahul/Documents/ENTC S5/Digital System Design/Single Bus Architecture/bus_mux.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Rahul/Documents/ENTC S5/Digital System Design/Single Bus Architecture|C:/Users/Rahul/Documents/ENTC S5/Digital System Design/Single Bus Architecture/bus_mux.sv|
+!i113 1
+R7
+R8
+R9
+vcontrol_unit
+R1
+R2
+!i10b 1
+!s100 6Xl9:EhR]D8Tf>K7>jUY02
+R3
+IQE80fUTF[5H<E[HNF^C1<3
+R4
+S1
+R0
+w1785075733
+8C:/Users/Rahul/Documents/ENTC S5/Digital System Design/Single Bus Architecture/control_unit.sv
+FC:/Users/Rahul/Documents/ENTC S5/Digital System Design/Single Bus Architecture/control_unit.sv
+!i122 3
+L0 1 193
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/Rahul/Documents/ENTC S5/Digital System Design/Single Bus Architecture/control_unit.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Rahul/Documents/ENTC S5/Digital System Design/Single Bus Architecture|C:/Users/Rahul/Documents/ENTC S5/Digital System Design/Single Bus Architecture/control_unit.sv|
+!i113 1
+R7
+R8
+R9
+vcpu
+R1
+R2
+!i10b 1
+!s100 _LIEdSae0:8nfbgN6B;=M1
+R3
+I8MVI<X>DcKo9k1nLSWGZE0
+R4
+S1
+R0
+w1784993995
+8C:/Users/Rahul/Documents/ENTC S5/Digital System Design/Single Bus Architecture/cpu.sv
+FC:/Users/Rahul/Documents/ENTC S5/Digital System Design/Single Bus Architecture/cpu.sv
+!i122 2
+L0 1 128
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/Rahul/Documents/ENTC S5/Digital System Design/Single Bus Architecture/cpu.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Rahul/Documents/ENTC S5/Digital System Design/Single Bus Architecture|C:/Users/Rahul/Documents/ENTC S5/Digital System Design/Single Bus Architecture/cpu.sv|
+!i113 1
+R7
+R8
+R9
+vreg_file
+R1
+R2
+!i10b 1
+!s100 R_7E7Nl3G_RdY0Al2GJUE2
+R3
+If72SV26FiKLYUdUd?g7Sd2
+R4
+S1
+R0
+w1784993996
+8C:/Users/Rahul/Documents/ENTC S5/Digital System Design/Single Bus Architecture/reg_file.sv
+FC:/Users/Rahul/Documents/ENTC S5/Digital System Design/Single Bus Architecture/reg_file.sv
+!i122 1
+L0 2 45
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/Rahul/Documents/ENTC S5/Digital System Design/Single Bus Architecture/reg_file.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Rahul/Documents/ENTC S5/Digital System Design/Single Bus Architecture|C:/Users/Rahul/Documents/ENTC S5/Digital System Design/Single Bus Architecture/reg_file.sv|
+!i113 1
+R7
+R8
+R9
+vspecial_regs
+R1
+R2
+!i10b 1
+!s100 ;eaW9Y:YJP1cIXRE7ABfi0
+R3
+IYg]XT:]PXLM87=kU;c>kG2
+R4
+S1
+R0
+w1784993953
+8C:/Users/Rahul/Documents/ENTC S5/Digital System Design/Single Bus Architecture/special_regs.sv
+FC:/Users/Rahul/Documents/ENTC S5/Digital System Design/Single Bus Architecture/special_regs.sv
+!i122 0
+L0 1 58
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/Rahul/Documents/ENTC S5/Digital System Design/Single Bus Architecture/special_regs.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Rahul/Documents/ENTC S5/Digital System Design/Single Bus Architecture|C:/Users/Rahul/Documents/ENTC S5/Digital System Design/Single Bus Architecture/special_regs.sv|
+!i113 1
+R7
+R8
+R9
+vtb_cpu
+R1
+!s110 1785076444
+!i10b 1
+!s100 Il][:0Ok3m?HK;M8e?Ed@1
+R3
+I10XfMaczm?6LOCkdG?f5S0
+R4
+S1
+R0
+w1785076407
+8C:/Users/Rahul/Documents/ENTC S5/Digital System Design/Single Bus Architecture/tb_cpu.sv
+FC:/Users/Rahul/Documents/ENTC S5/Digital System Design/Single Bus Architecture/tb_cpu.sv
+!i122 6
+L0 2 88
+R5
+r1
+!s85 0
+31
+!s108 1785076444.000000
+!s107 C:/Users/Rahul/Documents/ENTC S5/Digital System Design/Single Bus Architecture/tb_cpu.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Rahul/Documents/ENTC S5/Digital System Design/Single Bus Architecture|C:/Users/Rahul/Documents/ENTC S5/Digital System Design/Single Bus Architecture/tb_cpu.sv|
+!i113 1
+R7
+R8
+R9

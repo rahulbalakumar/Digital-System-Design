@@ -1,0 +1,89 @@
+`timescale 1ns / 1ps
+module tb_cpu;
+    
+    // Signals and Clock
+
+    logic clk;
+    logic rst_n;
+    logic [15:0] mem_addr;
+    logic mem_read; 
+    logic [15:0] mem_data_in;
+    logic [15:0] mem_data_out;
+
+    // Clock toggling every 5 time unit
+    initial clk = 0;
+    always #5 clk = ~clk;
+
+
+    // RAM or External Memory
+    logic [15:0] ram [0:255]; // 16 bit x 256 = 512 bytes
+
+    // Read : Output data when mem_read is 1
+    assign mem_data_in = mem_read ? ram[mem_addr] : 16'h0000;
+
+    // DUT
+
+    cpu #(
+        .WIDTH(16)
+    ) dut (
+        .clk(clk),
+        .rst_n(rst_n),
+        .mem_addr(mem_addr),
+        .mem_read(mem_read),
+        .mem_write(),
+        .mem_data_in(mem_data_in),
+        .mem_data_out(mem_data_out)
+
+    );
+
+    initial begin
+        rst_n = 0;
+
+        // Clear RAM
+        for (int i = 0; i < 256; i++) ram[i] = 16'h0000;
+
+        // Loading program (instructions) into RAM
+
+        // Address 0: LOAD R1, [R5] (opcode: 0010, Rd: 001, Rs1: 101, Rs2: 000, Unused: 000)
+        ram[0] = 16'h2340;
+
+        // Address 1: LOAD R2, [R6] (opcode: 0010, Rd: 010, Rs1: 110, Rs2: 000, Unused: 000)
+        ram[1] = 16'h2580;
+
+        // Address 3: ADD R3, R1, R2 (opcode: 0001, Rd: 011, Rs1: 001, Rs2: 010, Unused: 000)
+        ram[2] = 16'h1650;
+
+
+        // Giving Data in RAM to test
+        ram[10] = 16'd100; 
+        ram[11] = 16'd150;
+        
+        // Starting CPU
+        #20;
+        rst_n = 1;
+        #1;
+
+        // Giving addresses to R5 and R6
+        dut.u_reg_file.registers[5] = 16'd10;
+        dut.u_reg_file.registers[6] = 16'd11;
+
+        
+
+        // Giving enough time to run 
+        #1000;
+
+        $display("TEST COMPLETE.");
+        $display("RAM[10] = %d", ram[10]);
+        $display("RAM[11] = %d", ram[11]);
+        $display("----------------------");
+        $display("R1 = %d", dut.u_reg_file.registers[1]);
+        $display("R2 = %d", dut.u_reg_file.registers[2]);
+        $display("R3 (R1 + R2) = %d", dut.u_reg_file.registers[3]);
+
+        if (dut.u_reg_file.registers[3] == 16'd250)
+            $display("SUCCESS: CPU FETCHED, LOADED, AND ADDED.");
+        else
+            $display("ERROR!");
+        $stop;
+    end
+endmodule
