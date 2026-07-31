@@ -19,7 +19,7 @@ module cla_adder(
     
     sum = p ^ c[7:0];
     
-    P = &p;
+    P = &p; // 
     
     G = g[7];
     for (int i = 6; i >= 0; i--) begin
