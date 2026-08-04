@@ -1,0 +1,11 @@
+Pipelined Multiplier by ZIPCORES
+Target technology: technology independent
+Max operating frequency: 650 MHz
+Latency: 4 or 3 cycles
+Resources: 49 slice regs, 17 LUTs, 4 DSP48, 10 Occupied slices
+
+Pipelined Divider by ZIPCORES
+Target technology: Technology independent
+Max operating frequency: 495 MHz
+Latency: 8 cycles
+Resources: 801 slice regs, 704 LUTs 
